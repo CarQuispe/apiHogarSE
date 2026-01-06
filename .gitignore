@@ -33,7 +33,7 @@ coverage/
 *.swp
 *.swo
 *~
-
+.gitignore
 # ============ OS ============
 .DS_Store
 .DS_Store?
