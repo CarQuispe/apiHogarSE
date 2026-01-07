@@ -13,10 +13,10 @@ export class NinioOrmEntity {
   nombre: string;
 
   @Column({ name: 'apellido_paterno' })
-  apellidoPaterno: string;
+  apellido_paterno: string; // Cambiado a snake_case
 
   @Column({ name: 'apellido_materno', nullable: true })
-  apellidoMaterno?: string;
+  apellido_materno?: string; // Cambiado a snake_case
 
   @Column({ nullable: true })
   sexo?: string;
@@ -28,26 +28,26 @@ export class NinioOrmEntity {
   etnia?: string;
 
   @Column({ name: 'fecha_nacimiento', type: 'date' })
-  fechaNacimiento: Date;
+  fecha_nacimiento: Date; // Cambiado a snake_case
 
   @Column({ name: 'fecha_ingreso', type: 'date' })
-  fechaIngreso: Date;
+  fecha_ingreso: Date; // Cambiado a snake_case
 
   @Column()
   estado: string;
 
   @Column({ name: 'observaciones_ingreso', type: 'text', nullable: true })
-  observacionesIngreso?: string;  // ✅ CORREGIDO
+  observaciones_ingreso?: string; // Cambiado a snake_case
 
   @Column({ name: 'fecha_egreso', type: 'date', nullable: true })
-  fechaEgreso?: Date;
+  fecha_egreso?: Date; // Cambiado a snake_case
 
   @Column({ name: 'motivo_egreso', type: 'text', nullable: true })
-  motivoEgreso?: string;
+  motivo_egreso?: string; // Cambiado a snake_case
 
   @CreateDateColumn({ name: 'fecha_creacion' })
-  fechaCreacion: Date;
+  fecha_creacion: Date; // Cambiado a snake_case
 
   @UpdateDateColumn({ name: 'fecha_actualizacion' })
-  fechaActualizacion: Date;
+  fecha_actualizacion: Date; // Cambiado a snake_case
 }

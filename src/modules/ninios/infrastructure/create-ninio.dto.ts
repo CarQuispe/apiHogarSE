@@ -10,8 +10,8 @@ export class CreateNinioDto {
   nombre: string;
 
   @IsString()
-  apellidoPaterno: string;
+  apellido_Paterno: string;
 
   @IsDateString()
-  fechaNacimiento: string;
+  fecha_Nacimiento: string;
 }
